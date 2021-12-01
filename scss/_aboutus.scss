@@ -1,0 +1,44 @@
+@use 'basics';
+@use 'header';
+@use 'footer';
+@use 'hero';
+
+// -----------------------------------------------------------
+.employee {
+    max-width: 100%;
+
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    &__photo {
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    &__desc {
+        padding: 10px;
+    }
+}
+
+hr {
+    color: lightgray;
+    margin: 0 20px;
+}
+
+.description {
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+.work {
+    text-align: left;
+
+    &__link, &__item {
+        text-decoration: none;
+        color: gray;
+    }
+}

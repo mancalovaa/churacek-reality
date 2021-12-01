@@ -1,0 +1,24 @@
+@use 'basics';
+@use 'header';
+
+// -----------------------------------------------------------
+
+.footer-full {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: basics.$c-primary;
+    text-align: center;
+}
+
+.footer {
+    color: honeydew;
+    font-size: 0.85rem;
+    max-width: 1100px;
+    margin: auto;
+
+    p {
+        padding: 10px;
+        margin: 0 auto;
+    }
+}

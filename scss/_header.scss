@@ -1,0 +1,133 @@
+@use 'basics';
+
+// -----------------------------------------------------------
+
+.header-full {
+    width: 100vw;
+    margin: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1100px;
+    position: relative;
+}
+
+.logo {
+    padding: 10px 0;
+
+
+    &__image {
+        max-width: 240px;
+        
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.menu {
+    justify-self: end;
+    align-self: center;
+    text-transform: uppercase;
+    color: rgb(114, 116, 131);
+    margin: 20px 0;
+
+    &__checkbox {
+        position: absolute; 
+        left: -9999px;
+       }
+
+    &__list, &__sublist {
+        list-style: none;
+        text-decoration: none;
+        color: rgb(173, 175, 177);
+        background-color: white ;
+        z-index: 2;
+        width: 100vw;
+        padding: 0;
+    }
+
+    &__sublist-item {
+        background-color: white ;
+        list-style: none;
+    }
+
+    &__item{
+        background-color: white ;
+        list-style: none;
+    }
+
+    &__link, &__sublist-link {
+        text-decoration: none;
+        display: block;
+        color: rgb(114, 116, 131);
+        padding: 10px;
+    }
+
+    &__link:hover, &__sublist-link:hover {
+        text-decoration: none;
+        display: block;
+        color: rgb(114, 116, 131);
+        background-color: rgb(75, 73, 73);
+
+    }
+
+    &__item--hide {
+        color: lightgray;
+    }
+
+
+
+    &__list {
+        display: none;
+        position: absolute;
+        right: 0;
+        padding: 0;
+        top: 75px;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__checkbox:checked ~ &__list {
+        display: block;
+        background-color: white;
+    }
+
+
+
+
+    // &__item {
+    //     padding: 5px;
+    //     height: 1.2rem;
+
+    //     :hover{
+    //     color: black;
+    // }
+    // }
+
+    // &__sublist-item {
+    //     padding: 5px;
+    //     height: 1.2rem;
+
+    // }
+
+    // &__sublist {
+    //     list-style: none;
+    //     text-decoration: none;
+    //     color: rgb(173, 175, 177);
+    //     // position: absolute;
+    //     padding: 10px;
+    //     background-color: white ;
+    // }
+
+
+
+
+}
