@@ -1,0 +1,24 @@
+.contact {
+
+    &__map {
+        padding: 20px;
+    }
+    iframe {
+        width: 100%;
+    }
+    
+
+    @media screen and (min-width: 600px) {
+        
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__text {
+        align-self: center;
+    }
+
+
+}
+
+}

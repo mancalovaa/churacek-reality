@@ -1,0 +1,23 @@
+@use 'basics';
+@use 'header';
+@use 'footer';
+@use 'hero';
+
+// --------------------------------------------------------------
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__photo {
+        width: auto;
+
+        img {
+            width: 70%;
+            border-radius: 10px;
+        }
+    }
+
+    &__desc {
+        align-self: center;;
+    }
+}
