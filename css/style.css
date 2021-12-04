@@ -197,6 +197,19 @@ body {
   font-weight: 300;
 }
 
+.hero-pages {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-pages__title {
+  font-size: 50px;
+  color: #1B405D;
+  margin: 0 0;
+  padding: 30px 0;
+  font-weight: 300;
+}
+
 .content {
   text-align: center;
 }
@@ -206,7 +219,7 @@ body {
   position: relative;
   overflow: hidden;
   text-align: center;
-  z-index: 1;
+  z-index: 0;
   color: #1B405D;
 }
 .content h2::before,

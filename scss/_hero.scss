@@ -28,3 +28,17 @@
         font-weight: 300;
     }
 }
+
+.hero-pages {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  
+    &__title {
+        font-size: 50px;
+        color: basics.$c-primary;
+        margin: 0 0;
+        padding: 30px 0;
+        font-weight: 300;
+    }
+  }
