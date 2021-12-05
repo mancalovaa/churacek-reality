@@ -147,6 +147,9 @@ body {
   .menu__sublist-link {
     color: #1B405D;
   }
+  .menu__link--hide:hover {
+    font-weight: bold;
+  }
   .menu__link::after {
     display: none;
     position: relative;
@@ -243,6 +246,10 @@ body {
 
 .benefits {
   margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
 }
 .benefits a {
   text-decoration: none;
@@ -272,10 +279,8 @@ body {
 }
 @media screen and (min-width: 480px) {
   .benefits {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 15px;
+    grid-template-rows: repeat(auto, 1fr);
   }
   .benefits__title {
     grid-column-start: 1;
@@ -396,6 +401,26 @@ hr {
 }
 .contact iframe {
   width: 100%;
+}
+.contact__list {
+  list-style: none;
+  text-align: left;
+}
+.contact__list svg {
+  margin-right: 15px;
+}
+.contact__item {
+  font-weight: bold;
+  color: #1B405D;
+  padding-top: 10px;
+}
+.contact__item--regular {
+  font-weight: 300;
+  color: #1B405D;
+}
+.contact__link {
+  text-decoration: none;
+  color: #1B405D;
 }
 @media screen and (min-width: 600px) {
   .contact {

@@ -1,3 +1,6 @@
+@use 'basics';
+
+// -------------------------------
 .contact {
 
     &__map {
@@ -5,6 +8,31 @@
     }
     iframe {
         width: 100%;
+    }
+
+    &__list {
+        list-style: none;
+        text-align: left;
+    }
+
+    &__list svg{
+        margin-right: 15px;
+    }
+
+    &__item {
+        font-weight: bold;
+        color: basics.$c-primary;
+        padding-top: 10px;
+    }
+
+    &__item--regular{
+        font-weight: 300;
+        color: basics.$c-primary;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: basics.$c-primary;
     }
     
 

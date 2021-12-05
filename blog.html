@@ -3,3 +3,10 @@ layout: layouts/main_layout.njk
 title: Churáček reality - Blog
 headline: Blog
 ---
+
+{% for clanek in collections.blog %}
+
+    <h2>{{ clanek.data.headline }}</h2>
+    <a href="{{ clanek.url }}">Celý článek</a>
+
+{% endfor %}

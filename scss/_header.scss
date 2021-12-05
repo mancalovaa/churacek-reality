@@ -153,6 +153,10 @@
       color: basics.$c-primary;
     }
 
+    &__link--hide:hover {
+      font-weight: bold;
+    }
+
     &__link::after {
       display: none;
       position: relative;

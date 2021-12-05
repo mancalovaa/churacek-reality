@@ -6,6 +6,12 @@ headline: Nemovitosti
 
 <div class="content">
     <div class="realty-offer">
+        {% for nemovitost in collections.prodej %}
+
+    <h3>{{ nemovitost.data.headline }}</h3>
+    <a href="{{ nemovitost.url }}">Celý článek</a>
+
+{% endfor %}
     </div>
     <div class="realty-sold">
         <h2>Prodáno/pronajato</h2>

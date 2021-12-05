@@ -72,6 +72,12 @@ title: Churáček reality
 
   <div class="realty">
     <h2 class="realty__title">Nemovitosti</h2>
+    {% for produkt in collections.novinky %}
+
+    <h3>{{ produkt.data.headline }}</h3>
+    <a href="{{ produkt.url }}">Celý článek</a>
+
+    {% endfor %}
 
   </div>
 </div>
