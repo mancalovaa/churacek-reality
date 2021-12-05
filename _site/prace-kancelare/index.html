@@ -36,27 +36,27 @@
       <ul class="menu__list">
         <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">O nás</a>
           <ul class="menu__sublist">
-            <li class="menu__sublist-item"><a class="menu__sublist-link" href="/nas-tym/">Náš tým</a></li>
-            <li class="menu__sublist-item"><a class="menu__sublist-link" href="/prace-kancelare/">Práce realitní kanceláře</a></li>
+            <li class="menu__sublist-item "><a class="menu__sublist-link" href="/nas-tym/">Náš tým</a></li>
+            <li class="menu__sublist-item menu__item--active"><a class="menu__sublist-link" href="/prace-kancelare/">Práce realitní kanceláře</a></li>
           </ul>
         </li>
         
         <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">Služby</a>
           <ul class="menu__sublist">
-            <li class="menu__sublist-item"><a class="menu__sublist-link" href="/prezentace-nemovitosti/">Prezentace nemovitosti</a></li>
-            <li class="menu__sublist-item"><a class="menu__sublist-link" href="/vykup-nemovistoti/">Výkup a odlužení nemovitostí</a></li>
-            <li class="menu__sublist-item"><a class="menu__sublist-link" href="/3dscan/">Dollhouse - 3D scan</a></li>
+            <li class="menu__sublist-item "><a class="menu__sublist-link" href="/prezentace-nemovitosti/">Prezentace nemovitosti</a></li>
+            <li class="menu__sublist-item "><a class="menu__sublist-link" href="/vykup-nemovistoti/">Výkup a odlužení nemovitostí</a></li>
+            <li class="menu__sublist-item "><a class="menu__sublist-link" href="/3dscan/">Dollhouse - 3D scan</a></li>
           </ul>
         </li>
         <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">Nemovitosti</a>
           <ul class="menu__sublist">
-            <li class="menu__sublist-item"><a class="menu__sublist-link" href="/nemovitosti/">Nabídka nemovitostí</a></li>
-            <li class="menu__sublist-item"><a class="menu__sublist-link" href="/chrustenice/">RD Chrustenice</a></li>
+            <li class="menu__sublist-item "><a class="menu__sublist-link" href="/nemovitosti/">Nabídka nemovitostí</a></li>
+            <li class="menu__sublist-item "><a class="menu__sublist-link" href="/chrustenice/">RD Chrustenice</a></li>
           </ul>
         </li>
-        <li class="menu__item"><a class="menu__link" href="/reference/">Reference</a></li>
-        <li class="menu__item"><a class="menu__link" href="/blog/">Blog</a></li>
-        <li class="menu__item"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+        <li class="menu__item "><a class="menu__link" href="/reference/">Reference</a></li>
+        <li class="menu__item "><a class="menu__link" href="/blog/">Blog</a></li>
+        <li class="menu__item "><a class="menu__link" href="/kontakt/">Kontakt</a></li>
       </ul>
     </nav>
   </div>
@@ -89,7 +89,10 @@
             <p>Na první schůzce s majitelem vždy nastíníme jak celý proces prodeje vypadá a co nás tedy společně čeká na cestě k financím, které chceme z prodeje nemovitosti získat. V první řadě zjišťujeme priority klienta - co je pro něj důležité, například jak rychle chce prodat, někdy klient nechce nemovitosti nabízet veřejně na realitních serverech, nebo například chce prohlídky jen v jeden den v týdnu v jasně stanoveném čase. Naší prací je si se všemi takovými požadavky poradit a pro klienta celý prodej maximálně zjednodušit, tzn. od majitele dostat klíče a pak už se o všechno postarat. Pokud v bytě ještě bydlíte, tak to samozřejmě vůbec není problém.</p>
         </div>
         <div class="description__image">
-            <img src="/images/prace-kancelare.png" alt="">
+            <a data-fslightbox href="/images/prace-kancelare.png">
+                <img src="/images/prace-kancelare.png" alt="Schéma">
+                </a>
+            <!-- <img src="/images/prace-kancelare.png" alt=""> -->
         </div>
     </div>
 <div class="work">
@@ -120,6 +123,11 @@
         <br> © 2018 Adam Churáček, Gabriela Zimová</p>
     </div>
 </footer>
-    
+    <script src="fslightbox.js"></script>
+<script>
+fsLightboxInstances['first-lightbox'].open(0);
+fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');
+fsLightbox.close();
+</script>
 </body>
 </html>

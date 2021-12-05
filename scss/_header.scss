@@ -45,7 +45,6 @@
   &__sublist {
     list-style: none;
     text-decoration: none;
-    color: rgb(173, 175, 177);
     background-color: white;
     z-index: 2;
     width: 100vw;
@@ -63,33 +62,33 @@
   }
 
   &__link,
-  &__sublist-link {
+  &__link--hide {
     text-decoration: none;
     display: block;
-    color: rgb(114, 116, 131);
+    color: basics.$c-primary;
+    padding: 10px;
+    position: relative;
+  }
+
+  &__sublist-link {
+    text-decoration: none;
+    color: lightgrey;
+    display: block;
     padding: 10px;
     position: relative;
   }
 
   &__link:hover,
   &__sublist-link:hover {
-    text-decoration: none;
-    display: block;
-    color: rgb(114, 116, 131);
-    background-color: rgb(75, 73, 73);
+    font-weight: bold;
+    color: basics.$c-primary;
   }
 
-  &__link::after {
-    content: "";
-    display: block;
-    width: 240px;
-    height: 0.3px;
-    background-color: rgb(180, 176, 176);
-    margin: 5px auto;
-  }
 
-  &__item--hide {
-    color: lightgray;
+  &__item--active &__link,
+  &__item--active &__sublist-link {
+    color: basics.$c-primary;
+    font-weight: bold;
   }
 
   &__list {
@@ -102,8 +101,16 @@
     text-align: center;
   }
 
-  &__link--hide {
-    color: lightgray;
+  
+
+  &__link--hide:hover {
+    font-weight: 300;
+    cursor: context-menu;
+  }
+
+  &__checkbox:checked &__toggler{
+    font-weight: bold;
+    color: basics.$c-primary;
   }
 
   &__checkbox:checked ~ &__list {
@@ -134,17 +141,18 @@
       width: auto;
     }
 
-    &__link--hide {
-      color: rgb(114, 116, 131);
-    }
-
     &__sublist {
       display: none;
-      width: 250px;
+      width: 270px;
       z-index: 0;
       position: absolute;
       text-align: left;
     }
+
+    &__sublist-link {
+      color: basics.$c-primary;
+    }
+
     &__link::after {
       display: none;
       position: relative;
@@ -152,6 +160,9 @@
 
     &__item--hide:hover ul{
       display: block;
+      cursor: context-menu;
     }
+
+   
   }
 }

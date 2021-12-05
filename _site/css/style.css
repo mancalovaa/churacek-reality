@@ -62,7 +62,6 @@ body {
 .menu__list, .menu__sublist {
   list-style: none;
   text-decoration: none;
-  color: #adafb1;
   background-color: white;
   z-index: 2;
   width: 100vw;
@@ -76,29 +75,27 @@ body {
   background-color: white;
   list-style: none;
 }
-.menu__link, .menu__sublist-link {
+.menu__link, .menu__link--hide {
   text-decoration: none;
   display: block;
-  color: #727483;
+  color: #1B405D;
+  padding: 10px;
+  position: relative;
+}
+.menu__sublist-link {
+  text-decoration: none;
+  color: lightgrey;
+  display: block;
   padding: 10px;
   position: relative;
 }
 .menu__link:hover, .menu__sublist-link:hover {
-  text-decoration: none;
-  display: block;
-  color: #727483;
-  background-color: #4b4949;
+  font-weight: bold;
+  color: #1B405D;
 }
-.menu__link::after {
-  content: "";
-  display: block;
-  width: 240px;
-  height: 0.3px;
-  background-color: #b4b0b0;
-  margin: 5px auto;
-}
-.menu__item--hide {
-  color: lightgray;
+.menu__item--active .menu__link, .menu__item--active .menu__sublist-link {
+  color: #1B405D;
+  font-weight: bold;
 }
 .menu__list {
   display: none;
@@ -109,8 +106,13 @@ body {
   margin: 0;
   text-align: center;
 }
-.menu__link--hide {
-  color: lightgray;
+.menu__link--hide:hover {
+  font-weight: 300;
+  cursor: context-menu;
+}
+.menu__checkbox:checked .menu__toggler {
+  font-weight: bold;
+  color: #1B405D;
 }
 .menu__checkbox:checked ~ .menu__list {
   display: block;
@@ -135,15 +137,15 @@ body {
     z-index: 0;
     width: auto;
   }
-  .menu__link--hide {
-    color: #727483;
-  }
   .menu__sublist {
     display: none;
-    width: 250px;
+    width: 270px;
     z-index: 0;
     position: absolute;
     text-align: left;
+  }
+  .menu__sublist-link {
+    color: #1B405D;
   }
   .menu__link::after {
     display: none;
@@ -151,6 +153,7 @@ body {
   }
   .menu__item--hide:hover ul {
     display: block;
+    cursor: context-menu;
   }
 }
 
@@ -185,14 +188,15 @@ body {
 }
 .hero h1 {
   color: white;
-  padding: 10px;
-  font-size: 1.66rem;
+  padding: 30px;
+  font-size: 50px;
   margin: 0;
+  font-weight: 300;
 }
 .hero h2 {
   color: white;
-  font-size: 1rem;
-  padding: 10px;
+  font-size: 25px;
+  padding: 15px;
   margin: 0;
   font-weight: 300;
 }
