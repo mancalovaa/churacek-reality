@@ -9,12 +9,14 @@
     margin: 0;
     background-color: basics.$c-primary;
     text-align: center;
-    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+
 }
 
 .footer {
     color: honeydew;
-    font-size: 0.85rem;
+    font-size: 16px;
     max-width: 1100px;
     margin: auto;
 

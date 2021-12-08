@@ -34,21 +34,21 @@
       <label for="menu-checkbox" class="menu__toggler">Menu ☰</label>
 
       <ul class="menu__list">
-        <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">O nás</a>
+        <li class="menu__item menu__item--hide   "><a class="menu__link menu__link--hide" href="">O nás</a>
           <ul class="menu__sublist">
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/nas-tym/">Náš tým</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/prace-kancelare/">Práce realitní kanceláře</a></li>
           </ul>
         </li>
         
-        <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">Služby</a>
+        <li class="menu__item menu__item--hide    "><a class="menu__link menu__link--hide" href="">Služby</a>
           <ul class="menu__sublist">
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/prezentace-nemovitosti/">Prezentace nemovitosti</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/vykup-nemovistoti/">Výkup a odlužení nemovitostí</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/3dscan/">Dollhouse - 3D scan</a></li>
           </ul>
         </li>
-        <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">Nemovitosti</a>
+        <li class="menu__item menu__item--hide   "><a class="menu__link menu__link--hide" href="">Nemovitosti</a>
           <ul class="menu__sublist">
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/nemovitosti/">Nabídka nemovitostí</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/chrustenice/">RD Chrustenice</a></li>
@@ -88,10 +88,11 @@
     </div>
     <div class="contact__text">
         <ul class="contact__list">
-            <li class="contact__item">
+            <li class="contact__item contact__item--bigger">
+                Churáček reality s.r.o.</li>
+            <li class="contact__item contact__item--regular">
                 <svg width="25" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
-                Churáček reality s.r.o. <br>
-                <span class="contact__item--regular"> Komunardů 1130/25, Praha 7 - Holešovice, 170 00</span></li>
+                Komunardů 1130/25, Praha 7 - Holešovice, 170 00</li>
             <li class="contact__item">
                 <svg width="25" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
                 +420 776 776 814</li>
@@ -108,6 +109,47 @@
 
 <div class="contact-form">
     <h2>Napiště nám</h2>
+    <form class="form" action="http://formular.itgirls.cz" method="post">
+    <div class="form__field">
+      <label for="jmeno_prijmeni">Jméno a příjmení *</label>
+      <input type="text" name="jmeno_prijmeni" id="jmeno_prijmeni" required/>
+    </div>
+
+    <div class="form__field">
+      <label for="email">E-mail *</label>
+      <input type="email" name="email" id="email" required/>
+    </div>
+
+    <div class="form__field">
+      <label for="telefon">Telefon</label>
+      <input type="number" name="telefon" id="telefon" />
+    </div>
+
+    <div class="form__field">
+      <label for="dotaz">Čeho se týká váš dotaz</label>
+      <select name="dotaz" id="dotaz">
+          <option></option>
+          <option value="dotaz_produkt"> Dotaz na produkt</option>
+          <option value="dotaz_objednavka"> Dotaz na objednávku</option>
+          <option value="reklamace"> Reklamace</option>
+      </select>
+    </div>
+
+    <div class="form__field">
+      <label for="zprava">Zpráva</label>
+      <textarea name="zprava" id="zprava" rows="10"></textarea>
+    </div>
+
+    <div class="form_horizontal">
+        <input type="checkbox" name="volat" id="volat" value="ano_volat">
+        <label for="volat">zavolejte mi zpět</label>
+    </div>
+
+    <input type="submit" name="odeslat" value="Odeslat">
+
+    
+
+  </form>
 </div>
 
 <div class="additional-info">
@@ -125,7 +167,7 @@
         <br> © 2018 Adam Churáček, Gabriela Zimová</p>
     </div>
 </footer>
-    <script src="fslightbox.js"></script>
+    <script src="/fslightbox.js"></script>
 <script>
 fsLightboxInstances['first-lightbox'].open(0);
 fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');

@@ -34,21 +34,21 @@
       <label for="menu-checkbox" class="menu__toggler">Menu ☰</label>
 
       <ul class="menu__list">
-        <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">O nás</a>
+        <li class="menu__item menu__item--hide   "><a class="menu__link menu__link--hide" href="">O nás</a>
           <ul class="menu__sublist">
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/nas-tym/">Náš tým</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/prace-kancelare/">Práce realitní kanceláře</a></li>
           </ul>
         </li>
         
-        <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">Služby</a>
+        <li class="menu__item menu__item--hide    "><a class="menu__link menu__link--hide" href="">Služby</a>
           <ul class="menu__sublist">
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/prezentace-nemovitosti/">Prezentace nemovitosti</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/vykup-nemovistoti/">Výkup a odlužení nemovitostí</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/3dscan/">Dollhouse - 3D scan</a></li>
           </ul>
         </li>
-        <li class="menu__item menu__item--hide"><a class="menu__link menu__link--hide" href="#">Nemovitosti</a>
+        <li class="menu__item menu__item--hide   "><a class="menu__link menu__link--hide" href="">Nemovitosti</a>
           <ul class="menu__sublist">
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/nemovitosti/">Nabídka nemovitostí</a></li>
             <li class="menu__sublist-item "><a class="menu__sublist-link" href="/chrustenice/">RD Chrustenice</a></li>
@@ -81,7 +81,8 @@
 		zde se vloží obsah stránky (nebo šablony),
 		která používá tuto šablonu
 	-->
-	<div class="content">
+	
+<div class="content">
   <h1 class="action"></h1>
   <div class="realty__main">
     <div class="realty__desc">
@@ -186,6 +187,48 @@
 </div>
 
 
+<form class="form" action="http://formular.itgirls.cz" method="post">
+    <div class="form__field">
+      <label for="jmeno_prijmeni">Jméno a příjmení *</label>
+      <input type="text" name="jmeno_prijmeni" id="jmeno_prijmeni" required/>
+    </div>
+
+    <div class="form__field">
+      <label for="email">E-mail *</label>
+      <input type="email" name="email" id="email" required/>
+    </div>
+
+    <div class="form__field">
+      <label for="telefon">Telefon</label>
+      <input type="number" name="telefon" id="telefon" />
+    </div>
+
+    <div class="form__field">
+      <label for="dotaz">Čeho se týká váš dotaz</label>
+      <select name="dotaz" id="dotaz">
+          <option></option>
+          <option value="dotaz_produkt"> Dotaz na produkt</option>
+          <option value="dotaz_objednavka"> Dotaz na objednávku</option>
+          <option value="reklamace"> Reklamace</option>
+      </select>
+    </div>
+
+    <div class="form__field">
+      <label for="zprava">Zpráva</label>
+      <textarea name="zprava" id="zprava" rows="10"></textarea>
+    </div>
+
+    <div class="form_horizontal">
+        <input type="checkbox" name="volat" id="volat" value="ano_volat">
+        <label for="volat">zavolejte mi zpět</label>
+    </div>
+
+    <input type="submit" name="odeslat" value="Odeslat">
+
+    
+
+  </form>
+
 </main>
 
 
@@ -196,7 +239,7 @@
         <br> © 2018 Adam Churáček, Gabriela Zimová</p>
     </div>
 </footer>
-    <script src="fslightbox.js"></script>
+    <script src="/fslightbox.js"></script>
 <script>
 fsLightboxInstances['first-lightbox'].open(0);
 fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');

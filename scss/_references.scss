@@ -1,0 +1,60 @@
+@use "basics";
+@use "header";
+@use "footer";
+@use "hero";
+@use "first-page";
+// -----------------------------------------------------------
+
+
+.references {
+margin: 20px 0;
+display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+
+
+  &__item {
+    border-radius: 15px;
+    // box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+    padding: 20px;
+  }
+
+  svg {
+    fill: basics.$c-primary;
+  }
+
+  &__title {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    color: basics.$c-primary;
+    font-weight: bold;
+  }
+
+  &__realty {
+    color: rgb(155, 154, 154);
+    margin: 5px auto;
+    font-weight: 300;
+  }
+
+  &__sign {
+    font-style: italic;
+  }
+
+
+  
+  @media screen and (min-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    &__item {
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,41 @@
+<form class="form" action="http://formular.itgirls.cz" method="post">
+    <div class="form__field">
+      <label for="jmeno_prijmeni">Jméno a příjmení *</label>
+      <input type="text" name="jmeno_prijmeni" id="jmeno_prijmeni" required/>
+    </div>
+
+    <div class="form__field">
+      <label for="email">E-mail *</label>
+      <input type="email" name="email" id="email" required/>
+    </div>
+
+    <div class="form__field">
+      <label for="telefon">Telefon</label>
+      <input type="number" name="telefon" id="telefon" />
+    </div>
+
+    <div class="form__field">
+      <label for="dotaz">Čeho se týká váš dotaz</label>
+      <select name="dotaz" id="dotaz">
+          <option></option>
+          <option value="dotaz_produkt"> Dotaz na produkt</option>
+          <option value="dotaz_objednavka"> Dotaz na objednávku</option>
+          <option value="reklamace"> Reklamace</option>
+      </select>
+    </div>
+
+    <div class="form__field">
+      <label for="zprava">Zpráva</label>
+      <textarea name="zprava" id="zprava" rows="10"></textarea>
+    </div>
+
+    <div class="form_horizontal">
+        <input type="checkbox" name="volat" id="volat" value="ano_volat">
+        <label for="volat">zavolejte mi zpět</label>
+    </div>
+
+    <input type="submit" name="odeslat" value="Odeslat">
+
+    
+
+  </form>

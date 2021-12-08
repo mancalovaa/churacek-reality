@@ -86,7 +86,7 @@
 
 
   &__item--active &__link,
-  &__item--active &__sublist-link {
+  &__sublist-item--active &__sublist-link{
     color: basics.$c-primary;
     font-weight: bold;
   }

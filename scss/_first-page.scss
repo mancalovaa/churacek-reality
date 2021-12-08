@@ -6,6 +6,8 @@
 
 .content {
   text-align: center;
+  padding-bottom: 75px;
+  margin: 0 10px;
 
   h2 {
     display: block;
@@ -46,9 +48,8 @@ display: grid;
   }
 
   &__item {
-    border: 1px solid lightgrey;
     border-radius: 15px;
-    box-shadow: 5px 5px 8px rgba($color: #999999, $alpha: 0.3);
+    box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
     padding: 20px;
 
     svg {
@@ -74,7 +75,7 @@ display: grid;
   }
   @media screen and (min-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-auto-rows: 1fr;
 
     &__title {
       grid-column-start: 1;

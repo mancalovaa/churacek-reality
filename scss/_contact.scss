@@ -25,6 +25,13 @@
         padding-top: 10px;
     }
 
+    &__item--bigger{
+        font-weight: bold;
+        color: basics.$c-primary;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+    }
+
     &__item--regular{
         font-weight: 300;
         color: basics.$c-primary;
