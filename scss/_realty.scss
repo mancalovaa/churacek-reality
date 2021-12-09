@@ -1,0 +1,38 @@
+@use 'basics';
+@use 'header';
+@use 'footer';
+@use 'hero';
+@use 'first-page';
+@use 'aboutus';
+@use 'services';
+@use 'contact';
+@use 'references';
+
+// --------------------------------
+
+.realty {
+    .glide {
+
+        &__slide img {
+            width: 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+    &__part {
+        @media screen and (min-width:480px) {
+            // display: grid;
+            // grid-template-columns: auto auto;
+            // grid-auto-rows: auto;
+            // gap: 20px;
+            
+        }
+    }
+
+
+}
+

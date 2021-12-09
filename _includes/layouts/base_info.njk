@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+    <link rel="stylesheet" href="/css/glide.core.min.css.map">
+    <link rel="stylesheet" href="/css/glide.theme.min.css">
+    <link rel="stylesheet" href="/css/glide.theme.min.css.map">
     <link rel="icon" href="https://d1di2lzuh97fh2.cloudfront.net/files/1i/1iu/1iukrw.ico?ph=e5609137d1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +18,14 @@
 <body>
 
     {{ content | safe }}
-    <script src="/fslightbox.js"></script>
+
+
+<script src="/js/fslightbox.js"></script>
+<script src="/js/glide.min.js"></script>
+
 <script>
-fsLightboxInstances['first-lightbox'].open(0);
-fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');
-fsLightbox.close();
+  new Glide('.glide').mount()
 </script>
+
 </body>
 </html>

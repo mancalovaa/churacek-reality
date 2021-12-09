@@ -2,6 +2,116 @@
 layout: layouts/main_layout.njk
 ---
 
-{{ content | safe }}
+<div class="content">
+  <h1 class="realty-title">{{ status }}</h1>
+  <div class="realty">
+    <div class="realty__part">
+      <div class="realty__desc">
+        <p>
+          Ve výhradním zastoupení majitele nabízíme ke koupi bytovou jednotku
+          dispozičně řešenou jako 3+kk o podlahové ploše 88 m2 v obci Hýskov, jen
+          4km od Berouna.
+        </p>
+        <p>
+          Byt se sestává z prostorné předsíně, obývacího pokoje se vstupem na
+          terasu a kuchyňským koutem, dvou ložnic, koupelny, a WC. Součásti
+          prodeje bytové jednotky je i komora na patře přímo vedle bytu K
+          dispozici společná kolárna v přízemí domu.
+        </p>
+        <p>
+          Bytový dům je perfektně lokalizován v klidné části Hýskova. V obci
+          naleznete mateřskou i základní školu, obchod s potravinami, restauraci,
+          koupaliště, autobusové i vlakové spojení a vůbec vše, co k životu
+          potřebujete.
+        </p>
+        <p>
+          Současný majitel si připlatil za použití lepších materiálů - v předsíni,
+          kuchyni, v koupelně a na WC je na podlaze položen kamenný koberec, ve
+          zbytku bytu plovoucí podlaha, kuchyně je na míru s vestavnými spotřebiči
+          Bosch, dveře v celém bytě jsou od renomovaného českého výrobce - firmy
+          Sapeli.
+        </p>
+        <p>
+          Tato nemovitosti je výjimečná zejména tím, že se nachází na okraji CHKO
+          Křivoklátsko, pokud tedy rádi trávíte čas v přírodě, tak se Vám tady
+          bude určitě líbit. A není to jen Křivoklátsko, ale i údolí Berounky,
+          Karlštejn, Český kras, lom Velká a Malá Amerika atd.
+        </p>
+        <p>
+          V centru Prahy jste od domu do 35 minut, do Berouna se dostanete za
+          pouhých 7 minut.
+        </p>
+        <p>
+          Pokud se chcete projet na kole, projít v lese, nebo si třeba zajít na
+          špičkové golfové hřiště, tak je Hýskov perfektním místem pro Vaše
+          bydlení.
+        </p>
+        <p>
+          Bytová jednotka je v osobním vlastnictví, není tedy problém ji
+          financovat hypotečním úvěrem, se kterým Vám rádi pomůžeme.
+        </p>
+        <p>Doporučujeme prohlídku.</p>
+      </div>
+      <div class="realty__photos">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="/images/hyskov/10001-19-99.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-22-0.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-25-6.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-27-3.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-29-4.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-31-0.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-37-7.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-40-5.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-42-1.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-48-1.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-5-5.jpg" alt=""></li>
+              <li class="glide__slide"><img src="/images/hyskov/10001-52.jpg" alt=""></li>
+            </ul>
+          </div>
 
-{% include 'partials/contact-form.njk' %}
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><<<</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>>></button>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <div class="realty__part">
+      <div class="realty__video">
+        <iframe src="{{ video }}" allowfullscreen="1" loading="lazy"></iframe>
+      </div>
+      <a href="{{ 3D }}"><div class="realty__3d"></div></a>
+    </div>
+
+    <div class="realty__part">
+      <div class="realty__plan">{{ pudorys }}</div>
+      <div class="realty__rooms"></div>
+    </div>
+
+    <div class="realty__part">
+      <div class="realty__docs1"></div>
+      <div class="realty__docs2"></div>
+    </div>
+
+    <div class="realty_part">
+      <div class="realty__map"></div>
+      <div class="realty__info"></div>
+    </div>
+
+    <div class="realty__price">{{ price }}</div>
+
+    <div class="contact-form">
+      <h3>Kontaktujte makléře</h3>
+      <p>
+        vyplňte prosím níže uvedený kontaktní formulář a já se Vám ozvu, jakmile
+        to bude možné, případně rovnou volejte na tel. 776 776 814
+      </p>
+      {% include 'partials/contact-form.njk' %}
+    </div>
+  </div>
+</div>

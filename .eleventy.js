@@ -5,10 +5,12 @@ module.exports = function(eleventyConfig) {
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("css");
 
+    eleventyConfig.addPassthroughCopy("js");
+    
     eleventyConfig.addFilter("randomLimit", (arr, limit, currPage) => {
       // Filters out current page
       const pageArr = arr.filter((page) => page.url !== currPage);
-    
+
       // Randomizes remaining items
       pageArr.sort(() => {
         return 0.5 - Math.random();

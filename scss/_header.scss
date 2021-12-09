@@ -61,8 +61,7 @@
     list-style: none;
   }
 
-  &__link,
-  &__link--hide {
+  &__link {
     text-decoration: none;
     display: block;
     color: basics.$c-primary;
@@ -70,9 +69,12 @@
     position: relative;
   }
 
+  &__link--hide {
+    display: none;
+  }
+
   &__sublist-link {
     text-decoration: none;
-    color: lightgrey;
     display: block;
     padding: 10px;
     position: relative;

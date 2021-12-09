@@ -15,7 +15,9 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-size: 0.956rem;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #1B405D;
 }
 
 .main {
@@ -75,16 +77,18 @@ body {
   background-color: white;
   list-style: none;
 }
-.menu__link, .menu__link--hide {
+.menu__link {
   text-decoration: none;
   display: block;
   color: #1B405D;
   padding: 10px;
   position: relative;
 }
+.menu__link--hide {
+  display: none;
+}
 .menu__sublist-link {
   text-decoration: none;
-  color: lightgrey;
   display: block;
   padding: 10px;
   position: relative;
@@ -372,15 +376,16 @@ hr {
 .work {
   margin: 0 auto;
   text-align: left;
-  max-width: 70%;
 }
 .work__link, .work__item {
   text-decoration: none;
   color: gray;
 }
-
-.content {
-  max-width: 1100px;
+.work img {
+  width: 100%;
+}
+.work span {
+  font-weight: bold;
 }
 
 .about {
@@ -483,4 +488,11 @@ hr {
   .references {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.realty .glide__slide img {
+  width: 100%;
+}
+.realty img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
