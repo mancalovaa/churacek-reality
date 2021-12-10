@@ -26,7 +26,7 @@ body {
 }
 
 .header-full {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   border-bottom: 1px solid lightgrey;
 }
@@ -165,7 +165,7 @@ body {
 }
 
 .footer-full {
-  width: 100vw;
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: #1B405D;
@@ -177,7 +177,6 @@ body {
 .footer {
   color: honeydew;
   font-size: 16px;
-  max-width: 1100px;
   margin: auto;
 }
 .footer p {
@@ -188,11 +187,12 @@ body {
 .hero {
   max-width: 1100px;
   margin: 0 auto;
-  background-image: url(../images/hero-photo.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/hero-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 200px;
+  background-color: gray;
+  min-height: 400px;
 }
 .hero h1 {
   color: white;
@@ -226,6 +226,11 @@ body {
   text-align: center;
   padding-bottom: 75px;
   margin: 0 10px;
+}
+@media screen and (min-width: 1000px) {
+  .content {
+    margin: 0;
+  }
 }
 .content h2 {
   display: block;
@@ -320,25 +325,32 @@ body {
 .employee__photo {
   border-radius: 15px;
   padding: 10px;
-  max-width: 450px;
-  margin: auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .employee__desc {
   padding: 10px;
-  max-width: 450px;
+  max-width: 500px;
   margin: auto;
 }
-@media screen and (min-width: 750px) {
-  .employee {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
+@media screen and (min-width: 900px) {
   .employee hr {
     display: none;
   }
   .employee__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
     align-self: start;
+  }
+  .employee .gabca__main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .employee .gabca__desc {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
@@ -356,21 +368,6 @@ hr {
 }
 .description__image img {
   width: 100%;
-}
-@media screen and (min-width: 750px) {
-  .description {
-    display: grid;
-    grid-template-columns: 1fr auto;
-  }
-  .description__text {
-    align-self: center;
-  }
-  .description__image {
-    max-height: 440px;
-  }
-  .description__image img {
-    max-height: 100%;
-  }
 }
 
 .work {
@@ -495,4 +492,42 @@ hr {
 }
 .realty img {
   width: 100%;
+}
+form {
+  width: 500px;
+  color: grey;
+  text-align: end;
+}
+
+.form_field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form_field input[type=text],
+.form_field input[type=number],
+.form_field input[type=email],
+.form_field textarea,
+.form_field select,
+.form_field input[type=checkbox] {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #b4b2b2;
+  border-radius: 4px;
+}
+
+.form_horizontal {
+  margin-bottom: 15px;
+  color: black;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  font-size: 16px;
+  color: white;
+  padding: 10px 15px;
+  background-color: #1B405D;
+  border: 0;
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */

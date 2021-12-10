@@ -1,0 +1,51 @@
+@use 'basics';
+@use 'header';
+@use 'footer';
+@use 'hero';
+@use 'first-page';
+@use 'aboutus';
+@use 'services';
+@use 'realty';
+@use 'contact';
+@use 'references';
+
+
+form {
+	width: 500px;
+	color: grey;
+    text-align: end;
+}
+
+.form_field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.form_field input[type="text"],
+.form_field input[type="number"],
+.form_field input[type="email"],
+.form_field textarea,
+.form_field select,
+.form_field input[type="checkbox"] {
+	// flex: 1 1 100%;
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid rgb(180, 178, 178);
+	border-radius: 4px;
+
+}
+
+.form_horizontal {
+	margin-bottom: 15px;
+	color: black;
+	font-size: 16px;
+}
+
+input[type="submit"] {
+	font-size: 16px;
+	color: white;
+	padding: 10px 15px;
+	background-color: basics.$c-primary;
+	border: 0;
+	border-radius: 4px; }

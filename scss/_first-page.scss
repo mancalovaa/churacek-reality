@@ -9,6 +9,11 @@
   padding-bottom: 75px;
   margin: 0 10px;
 
+  @media screen and (min-width:1000px) {
+    margin: 0;
+    
+  }
+
   h2 {
     display: block;
     margin: 10px 20px;

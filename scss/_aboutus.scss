@@ -1,107 +1,93 @@
-@use 'basics';
-@use 'header';
-@use 'footer';
-@use 'hero';
+@use "basics";
+@use "header";
+@use "footer";
+@use "hero";
 
 // -----------------------------------------------------------
 .employee {
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
 
-    img {
-        width: 100%;
-        border-radius: 15px;
+  &__card {
+    margin: 0 auto;
+  }
+
+  &__photo {
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  &__desc {
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 900px) {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: auto;
+
+    hr {
+      display: none;
     }
 
     &__card {
-        margin: 0 auto;
-
-    }
-
-    &__photo {
-        border-radius: 15px;
-        padding: 10px;
-        max-width: 450px;
-        margin: auto;
-    }
-
-    &__desc {
-        padding: 10px;
-        max-width: 450px;
-        margin: auto;
-    }
-
-
-    @media screen and (min-width: 750px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-
-        hr {
-            display: none;
-        }
-
-        &__card {
-            align-self: start;
-        }
-        
+        grid-auto-rows: auto;
+      align-self: start;
     }
 
+    .gabca__main {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 
+    .gabca__desc {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;  
+    }
+  }
 }
 
 hr {
-    color: lightgray;
-    margin: 0 20px;
+  color: lightgray;
+  margin: 0 20px;
 }
 
 .description {
-padding: 10px;
-&__image {
+  padding: 10px;
+  &__image {
     max-width: 450px;
     margin: 0 auto;
 
     img {
-        width: 100%;
+      width: 100%;
     }
-}
-
-    @media screen and (min-width: 750px) {
-        display: grid;
-        grid-template-columns: 1fr auto;
-
-
-
-        &__text {
-            align-self: center;
-        }
-
-        &__image {
-            max-height: 440px;
-
-            img {
-                max-height: 100%;
-            }
-        }
-        
-    }
+  }
 }
 
 .work {
-    margin: 0 auto;
-    text-align: left;
+  margin: 0 auto;
+  text-align: left;
 
-    &__link, &__item {
-        text-decoration: none;
-        color: gray;
-    }
+  &__link,
+  &__item {
+    text-decoration: none;
+    color: gray;
+  }
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 
-    span {
-        font-weight: bold;
-    }
-
+  span {
+    font-weight: bold;
+  }
 }
-
-
