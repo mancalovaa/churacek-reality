@@ -503,6 +503,7 @@ form {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  width: 200px;
 }
 
 .form_field input[type=text],
@@ -511,10 +512,18 @@ form {
 .form_field textarea,
 .form_field select,
 .form_field input[type=checkbox] {
+  width: 450px;
   font-size: 16px;
   padding: 10px;
   border: 1px solid #b4b2b2;
   border-radius: 4px;
+}
+
+.form_field input[type=text],
+.form_field input[type=number],
+.form_field input[type=email],
+.form_field textarea {
+  width: 450px;
 }
 
 .form_horizontal {
@@ -530,4 +539,5 @@ input[type=submit] {
   background-color: #1B405D;
   border: 0;
   border-radius: 4px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

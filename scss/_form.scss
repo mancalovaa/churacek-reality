@@ -20,6 +20,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 15px;
+    width: 200px;
 }
 
 .form_field input[type="text"],
@@ -29,6 +30,7 @@ form {
 .form_field select,
 .form_field input[type="checkbox"] {
 	// flex: 1 1 100%;
+    width: 450px;
 	font-size: 16px;
 	padding: 10px;
 	border: 1px solid rgb(180, 178, 178);
@@ -36,6 +38,15 @@ form {
 
 }
 
+
+.form_field input[type="text"],
+.form_field input[type="number"],
+.form_field input[type="email"],
+.form_field textarea {
+	// flex: 1 1 100%;
+    width: 450px;
+
+}
 .form_horizontal {
 	margin-bottom: 15px;
 	color: black;
@@ -48,4 +59,5 @@ input[type="submit"] {
 	padding: 10px 15px;
 	background-color: basics.$c-primary;
 	border: 0;
-	border-radius: 4px; }
+	border-radius: 4px; 
+text-align: center;}
