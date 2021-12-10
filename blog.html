@@ -4,9 +4,20 @@ title: Churáček reality - Blog
 headline: Blog
 ---
 
-{% for clanek in collections.blog %}
+<div class="blog">
+{% for clanek in collections.blog | reverse %}
+<a href="{{ clanek.url }}">
+    <div class="blog__item">
+        <div class="blog__image">
+            <img src="{{ clanek.data.image}}" alt="{{ clanek.data.headline }}">
+        </div>
+        <div class="blog__title">
+        <h3 class="blog__name">{{ clanek.data.headline }}</h3>  
+        <p class="blog__perex">{{ clanek.data.perex }}</p>
 
-    <h2>{{ clanek.data.headline }}</h2>
-    <a href="{{ clanek.url }}">Celý článek</a>
+    </div>
+    </div>
+</a>
 
 {% endfor %}
+</div>

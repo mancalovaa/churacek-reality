@@ -1,0 +1,28 @@
+@use 'basics';
+@use 'header';
+@use 'footer';
+@use 'hero';
+@use 'first-page';
+@use 'aboutus';
+@use 'services';
+@use 'realty';
+@use 'contact';
+@use 'references';
+@use 'form';
+
+
+.chrustenice{
+    text-decoration: none;
+    color: basics.$c-primary;
+    font-style: italic;
+    margin: 100px;
+
+    h3{
+    font-weight: 300;
+}
+}
+
+.chrustenice:hover {
+    font-weight: bold;
+    font-size: 20px;
+}

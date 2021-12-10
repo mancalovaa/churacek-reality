@@ -1,0 +1,67 @@
+@use 'basics';
+@use 'header';
+@use 'footer';
+@use 'hero';
+@use 'first-page';
+@use 'aboutus';
+@use 'services';
+@use 'realty';
+@use 'contact';
+@use 'references';
+@use 'form';
+
+
+.blog {
+    margin: 20px 0;
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 15px;
+        
+    
+      a {
+        text-decoration: none;
+        color: basics.$c-primary;
+      }
+
+    
+      &__item {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 200px;
+          gap: 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+        padding: 10px;
+        
+
+     }    
+
+     &__image {
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        
+
+     }
+
+    &__perex {
+        font-style: italic;
+    }
+
+    @media screen and (min-width:750px) {
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+
+        &__item {
+            grid-template-rows: 200px;
+            gap: 20px;
+    }
+}
+}
