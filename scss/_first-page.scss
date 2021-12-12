@@ -48,6 +48,10 @@ display: grid;
     grid-template-rows: 1fr;
     gap: 15px;
 
+    &__item--nolink {
+      cursor: default;
+    }
+
   a {
     text-decoration: none;
   }

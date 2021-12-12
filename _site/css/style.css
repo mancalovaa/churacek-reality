@@ -263,6 +263,9 @@ body {
   grid-template-rows: 1fr;
   gap: 15px;
 }
+.benefits__item--nolink {
+  cursor: default;
+}
 .benefits a {
   text-decoration: none;
 }
@@ -597,4 +600,58 @@ input[type=submit] {
 .chrustenice:hover {
   font-weight: bold;
   font-size: 20px;
+}
+
+.scan3d__image {
+  max-width: 450px;
+}
+.scan3d__image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(153, 153, 153, 0.3);
+}
+.scan3d__list {
+  text-align: left;
+}
+.scan3d__item {
+  padding: 5px;
+  list-style-type: circle;
+}
+.scan3d__item--italic {
+  font-style: italic;
+}
+.scan3d__table {
+  width: 100%;
+}
+.scan3d__table th {
+  border-bottom: 1px solid #1B405D;
+  padding: 10px 0;
+}
+.scan3d__table td {
+  border-bottom: 1px solid lightgray;
+  padding: 0;
+  font-weight: bold;
+}
+.scan3d__table td span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+}
+.scan3d__pricelist--italic {
+  font-style: italic;
+  color: gray;
+}
+@media screen and (min-width: 750px) {
+  .scan3d {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .scan3d__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .scan3d__desc {
+    align-self: center;
+  }
 }/*# sourceMappingURL=style.css.map */

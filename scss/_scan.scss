@@ -1,0 +1,83 @@
+@use 'basics';
+@use 'header';
+@use 'footer';
+@use 'hero';
+@use 'first-page';
+
+// -----------------------------------------
+
+.scan3d {
+
+    &__image {
+        max-width: 450px;
+        
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+        }
+    }
+
+    &__list {
+        text-align: left;
+    }
+
+    &__item {
+        padding: 5px;
+        list-style-type: circle;
+
+        &--italic {
+            font-style: italic;
+        }
+    }
+
+    &__table {
+        width: 100%;
+
+        th {
+            border-bottom: 1px solid basics.$c-primary;
+            padding: 10px 0;
+        }
+
+        td {
+            border-bottom: 1px solid lightgray;
+            padding: 0;
+            font-weight: bold;
+
+
+
+        span {
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+    }
+    }
+
+    &__pricelist--italic {
+        font-style: italic;
+        color: gray;
+    }
+
+
+
+
+    @media screen and (min-width:750px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        &__title {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+
+        &__desc {
+            align-self: center;
+        }
+        
+    }
+}

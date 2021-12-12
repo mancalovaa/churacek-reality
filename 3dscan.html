@@ -5,8 +5,11 @@ headline: 3D scan nemovitosti
 ---
 
 <div class="content">
-  <div class="3d-scan">
-    <div class="3d-scan__desc">
+  <div class="scan3d">
+    <h3 class="scan3d__title">
+      Pracujeme s nejmodernější kamerou Matterport PRO 2 s rozlišením 134 Mpx
+    </h3>
+    <div class="scan3d__desc">
       <p>
         Matterport vytváří velmi realistický digitální obraz pro všechny typy
         zastavěných prostor, což umožňuje klientům, či zájemcům z pohodlí svého
@@ -25,33 +28,58 @@ headline: 3D scan nemovitosti
       </p>
     </div>
 
-    <div class="3d-scan__camera">
-      <h3>
-        Pracujeme s nejmodernější kamerou Matterport PRO 2 s rozlišením 134 Mpx
-      </h3>
-      <div class="3d-scan__image">
+      <div class="scan3d__image">
         <img src="/images/camera.jpg" alt="Kamera Matterport PRO" />
       </div>
-    </div>
 
-    <div class="3d-scan__info">
+    <div class="scan3d__info">
         <h3>Co vše je součástí</h3>
-        <ul class="3d-scan__list">
-            <li class="3d-scan__item">profesionální konzultace a návrh ideálního řešení scanu</li>
-            <li class="3d-scan__item">3D obraz nemovitosti</li>
-            <li class="3d-scan__item">model dollhouse - tzv. domeček pro panenky</li>
-            <li class="3d-scan__item">půdorys vč. možnosti měření - v půdorysu i 3D prohlídce lze měřit vzdálenost mezi dvěma libovolnými body s chybovostí pouze 1%</li>
-            <li class="3d-scan__item">6 měsíců hosting na serveru matterport.com, kde bude Vaše 3D prohlídka uveřejněna (případně není problém hosting prodloužit)</li>
-            <li class="3d-scan__item">vložení popisků do 3D modelu dle Vašich požadavků</li>
-            <li class="3d-scan__item">video průlet nemovitosti</li>
-            <li class="3d-scan__item">krátké promo video, které je vhodné např. na sociální sítě</li>
-            <li class="3d-scan__item">2D půdorys s kótami za příplatek 450,- Kč</li>
+        <br>
+        <ul class="scan3d__list">
+            <li class="scan3d__item">profesionální konzultace a návrh ideálního řešení scanu</li>
+            <li class="scan3d__item">3D obraz nemovitosti</li>
+            <li class="scan3d__item">model dollhouse - tzv. domeček pro panenky</li>
+            <li class="scan3d__item">půdorys vč. možnosti měření - v půdorysu i 3D prohlídce lze měřit vzdálenost mezi dvěma libovolnými body s chybovostí pouze 1%</li>
+            <li class="scan3d__item">6 měsíců hosting na serveru matterport.com, kde bude Vaše 3D prohlídka uveřejněna (případně není problém hosting prodloužit)</li>
+            <li class="scan3d__item">vložení popisků do 3D modelu dle Vašich požadavků</li>
+            <li class="scan3d__item">video průlet nemovitosti</li>
+            <li class="scan3d__item">krátké promo video, které je vhodné např. na sociální sítě</li>
+            <li class="scan3d__item scan3d__item--italic">2D půdorys s kótami za příplatek 450,- Kč</li>
         </ul>
     </div>
 
-    <div class="3d-scan__pricelist">
+    <div class="scan3d__pricelist">
         <h3>Ceník</h3>
-        <table></table>
+        <table class="scan3d__table">
+          <tr>
+            <th>Typ</th>
+            <th>Cena</th>
+          </tr>
+          <tr>
+            <td>mikro <br> <span>do 45 m2</span></td>
+            <td>3 500 Kč</td>
+          </tr>
+          <tr>
+            <td>mini <br> <span>od 46 do 65 m2</span></td>
+            <td>3 950 Kč</td>
+          </tr>
+          <tr>
+            <td>standard <br><span>od 66 do 85 m2</span></td>
+            <td>4 450 Kč</td>
+          </tr>
+          <tr>
+            <td>big <br> <span>od 86 do 105 m2</span></td>
+            <td>4 950 Kč</td>
+          </tr>
+          <tr>
+            <td>individual <br><span>od 106 m2</span></td>
+            <td>cena dohodou</td>
+          </tr>
+        </table>
+        <p> v případě Vašeho zájmu jsme schopni zajistit i profesionální fotografie scanované nemovitosti </p>
+
+<p class="scan3d__pricelist--italic"> ceny jsou uvedeny bez DPH (21%)</p>
+
     </div>
   </div>
 
@@ -62,16 +90,12 @@ headline: 3D scan nemovitosti
     <a href=""></a>
     <a href=""></a>
     <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
 </div>
 
-<div class="3d-scan-contact">
+<div class="scan3d-contact">
     <h2>Kontakt</h2>
     <p>vyplňte prosím formulář níže a my se Vám ozveme co nejdříve, případně nás kontaktujte na tel. 776776814</p>
-</div>
+    {% include 'partials/contact-form.njk' %}
+  </div>
 
 </div>
