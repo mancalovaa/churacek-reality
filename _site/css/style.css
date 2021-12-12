@@ -25,6 +25,19 @@ body {
   margin: auto;
 }
 
+.button {
+  font-size: 16px;
+  color: white;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #1B405D;
+  border: 0;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .header-full {
   width: 100%;
   margin: 0;
@@ -647,7 +660,7 @@ input[type=submit] {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .scan3d__title {
+  .scan3d__title, .scan3d__transport {
     grid-column-start: 1;
     grid-column-end: 3;
   }

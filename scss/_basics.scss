@@ -28,3 +28,17 @@ body {
   margin: auto;
 }
 
+.button {
+    font-size: 16px;
+    color: white;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: $c-primary;
+    border: 0;
+    border-radius: 4px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
