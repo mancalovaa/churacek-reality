@@ -2,6 +2,8 @@
 layout: layouts/main_layout.njk
 title: Churáček reality - Byt Hýskov
 headline: Prodej bytu 3+kk, Hýskov, ul. U Statku
+status: Rezervováno
+image: /images/hyskov/10001-19-99.jpg
 tags:
   - prodej
   - novinky
@@ -10,7 +12,73 @@ tags:
 <div class="content">
   <h1 class="realty-title">{{ status }}</h1>
   <div class="realty">
-    <div class="realty__part">
+    <div class="realty__part realty__part--grid">
+      <div class="realty__video">
+        <iframe
+          src="//www.youtube.com/embed/6a1FDjLGAc0?wmode=opaque"
+          allowfullscreen="1"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="realty__rooms">
+        <table>
+          <tr>
+            <td class="realty__basicinfo realty__basicinfo--bold">dispozice:</td>
+            <td>3+kk - 88 m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo realty__basicinfo--bold">konstrukce:</td>
+            <td>panel</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo realty__basicinfo--bold">vlastnictví:</td>
+            <td>novostavba z roku 2017</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">předsíň</td>
+            <td>8 m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">koupelna</td>
+            <td>6,7 m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">WC</td>
+            <td>1,5 m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">obývací pokoj + kk</td>
+            <td>41,2 m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">ložnice</td>
+            <td>14,1 m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">ložnice / pracovna</td>
+            <td>13 m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">balkon</td>
+            <td>3,5m2</td>
+          </tr>
+          <tr>
+            <td class="realty__basicinfo">komora v na patře</td>
+            <td>2 m2</td>
+          </tr>
+      </table>
+      </div>
+      
+    </div>
+
+    <div class="realty__price">
+      <hr>
+      <h3>Nabídková cena: 5.590.000,- Kč, vč. veškerého realitního i právního
+      servisu</h3>
+      <hr>
+    </div>
+
+    <div class="realty__part realty__part--grid">
       <div class="realty__desc">
         <p>
           Ve výhradním zastoupení majitele nabízíme ke koupi bytovou jednotku
@@ -57,92 +125,90 @@ tags:
         </p>
         <p>Doporučujeme prohlídku.</p>
       </div>
-        <div class="glide realty__photos">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-19-99.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-22-0.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-25-6.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-27-3.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-29-4.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-31-0.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-37-7.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-40-5.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-42-1.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-48-1.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-5-5.jpg" alt="" />
-              </li>
-              <li class="glide__slide">
-                <img src="/images/hyskov/10001-52.jpg" alt="" />
-              </li>
-            </ul>
-          </div>
-          
-          <!-- <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><<<</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>>></button>
-          </div> -->
+      <div class="realty__virtual">
+        <h3>Virtuální prohlídka</h3>
+        <div class="realty__virtual--link">
+      <a href="https://my.matterport.com/show/?m=e9tJmSCTmbT"
+      ><img src="/images/hyskov/10001-40-5.jpg" alt=""></a>
+    </div>
+    </div>
+    </div>
 
+    <div class="realty__galery">
+      <h2>Galerie</h2>
+      <div class="glide realty__photos">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <a data-fslightbox href="/images/hyskov/10001-19-99.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-19-99.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-22-0.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-22-0.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-25-6.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-25-6.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-27-3.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-27-3.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-29-4.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-29-4.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-31-0.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-31-0.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-37-7.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-37-7.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-40-5.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-40-5.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-42-1.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-42-1.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-48-1.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-48-1.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-5-5.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-5-5.jpg" alt="" /></li
+            ></a>
+            <a data-fslightbox href="/images/hyskov/10001-52.jpg"
+              ><li class="glide__slide">
+                <img src="/images/hyskov/10001-52.jpg" alt="" /></li
+            ></a>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><<<</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>>></button>
+        </div>
       </div>
     </div>
 
- <div class="realty__part">
-      <div class="realty__video">
-        <iframe src="//www.youtube.com/embed/6a1FDjLGAc0?wmode=opaque" allowfullscreen="1" loading="lazy"></iframe>
-      </div>
-      <a href="https://my.matterport.com/show/?m=e9tJmSCTmbT"><div class="realty__3d">Nějaká fotka</div></a>
-    </div>
+   
 
-  <div class="realty__part">
-      <div class="realty__plan"><a data-fslightbox href="/images/hyskov/pudorys.jpg"><img src="/images/hyskov/pudorys.jpg" alt="Půdorys Hyskov"></a></div>
-      <div class="realty__rooms">
-        <h4>Rozměry jednotlivých místností</h4>
-předsíň - 8 m2
-koupelna - 6,7 m2
-WC - 1,5 m2
-obývací pokoj + kk - 41,2 m2
-ložnice - 14,1 m2
-ložnice / pracovna - 13 m2
-balkon - 3,5m2
-komora v na patře - 2 m2
-      </div>
-    </div>
-
- 
     <div class="realty__part">
-      <div class="realty__docs1"><a data-fslightbox href="/images/hyskov/vlastnictvi.jpg">
-        <img src="/images/hyskov/vlastnictvi.jpg" alt="Vlastmictví">
-        </a></div>
-      <div class="realty__docs2"><a data-fslightbox href="/images/hyskov/evidencni list.jpg"><img src="/images/hyskov/evidencni list.jpg" alt="Evidenční list"></a></div>
-    </div>
-
-    <div class="realty_part">
-      <div class="realty__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906.8599731363577!2d14.049221515291999!3d49.99284669082747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bb002fd782953%3A0xf1252466a1c1da1!2s267%2006%20H%C3%BDskov!5e0!3m2!1sen!2scz!4v1639060589258!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <h2>Základní technické informace</h2>
+      <div class="realty__part--grid">
+        
+      <div class="realty__plan">
+        <a data-fslightbox href="/images/hyskov/pudorys.jpg"
+          ><img src="/images/hyskov/pudorys.jpg" alt="Půdorys Hyskov"
+        /></a>
       </div>
       <div class="realty__info">
-        <h4>Základní technické informace</h4>
         <ul class="realty__list">
           <li>dispozice: 3+kk</li>
           <li>konstrukce: panel</li>
@@ -158,15 +224,48 @@ komora v na patře - 2 m2
           <li>parkování: vlastní parkovací stání před domem</li>
           <li>PENB - B</li>
           <li>výtah - ne</li>
-</ul>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="realty__part">
+      <h2>Dokumenty</h2>
+      <div class="realty__part--grid">
+      <div class="realty__docs1">
+        <a data-fslightbox href="/images/hyskov/vlastnictvi.jpg">
+          <img src="/images/hyskov/vlastnictvi.jpg" alt="Vlastmictví" />
+        </a>
+      </div>
+      <div class="realty__docs2">
+        <a data-fslightbox href="/images/hyskov/evidencni list.jpg"
+          ><img src="/images/hyskov/evidencni list.jpg" alt="Evidenční list"
+        /></a>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="realty_part">
+      <h2>Místo nemovitosti</h2>
+      <div class="realty__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906.8599731363577!2d14.049221515291999!3d49.99284669082747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bb002fd782953%3A0xf1252466a1c1da1!2s267%2006%20H%C3%BDskov!5e0!3m2!1sen!2scz!4v1639060589258!5m2!1sen!2scz"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
 
     </div>
-   
-    <div class="realty__price">Nabídková cena: 5.590.000,- Kč, vč. veškerého realitního i právního servisu</div>
-  
+
+
+
     <div class="contact-form">
-      <h3>Kontaktujte makléře</h3>
+      <h2>Kontaktujte makléře</h2>
       <p>
         vyplňte prosím níže uvedený kontaktní formulář a já se Vám ozvu, jakmile
         to bude možné, případně rovnou volejte na tel. 776 776 814

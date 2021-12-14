@@ -7,7 +7,8 @@
 .employee {
   img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
   }
 
   &__card {
@@ -26,6 +27,9 @@
     max-width: 500px;
     margin: auto;
   }
+
+
+
 
   @media screen and (min-width: 900px) {
     // display: grid;
@@ -69,6 +73,8 @@ hr {
 
     img {
       width: 100%;
+      border-radius: 10px;
+      box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
     }
   }
 }
@@ -81,13 +87,29 @@ hr {
   &__item {
     text-decoration: none;
     color: gray;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+
+    :hover {
+      font-weight: bold;
+      color: basics.$c-primary;
+    }
   }
 
   img {
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
   }
 
   span {
     font-weight: bold;
+  }
+  
+  @media screen and (max-width: 909px) {
+    h2::before,
+    h2::after {
+      display: none;
+    }
   }
 }

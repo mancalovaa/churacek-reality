@@ -10,29 +10,151 @@
 
 // --------------------------------
 
-.realty {
-    .glide {
+// ------------------------------hlavní strana-----------------------
 
+.realty-offer {
+    display: grid;
+    gap: 20px;
+    grid-auto-rows: auto;
+
+    @media screen and (min-width:450px) {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    @media screen and (min-width:900px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------nemovitosti----------------------
+.realty {
+
+
+    .glide {
+        max-width: 80%;
+        margin: 20px auto;
+        border-radius: 15px;
+        
         &__slide img {
             width: 100%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+           
         }
     }
 
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
-    &__part {
-        @media screen and (min-width:480px) {
-            // display: grid;
-            // grid-template-columns: auto auto;
-            // grid-auto-rows: auto;
-            // gap: 20px;
-            
+    &__list {
+        list-style: none;
+        li {
+            padding-bottom: 5px;
+        }
+    }
+    &__basicinfo {
+        font-style: italic;
+    }
+
+    &__basicinfo--bold {
+        font-style:normal;
+        font-weight: bold;
+    }
+
+
+    &__virtual {
+        a {
+            display: block;
+            height: 100%;
+        }
+            img {
+                border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+            object-fit: cover;
+            height: 100%;
+            }
+
+            &--link {
+                height: 75%;
+            }
+    }
+    &__video {
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
         }
     }
 
+    &__rooms {
+        table {
+            margin: 0 auto;
+        }
+    }
+
+    &__map {
+
+        margin: 20px auto;
+        iframe {
+
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+        }
+    }
+
+
+    &__docs1,
+    &__docs2 {
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    &__part{
+        margin: 20px auto;
+
+    }
+
+    &__part--grid {
+        margin: 20px auto;
+
+        @media screen and (min-width:750px) {
+            
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
+    }
 
 }
 
