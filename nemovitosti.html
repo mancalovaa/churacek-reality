@@ -8,20 +8,23 @@ headline: Nemovitosti
     <div class="realty-offer">
         {% for nemovitost in collections.prodej %}
         <a class="reality-link" href="{{ nemovitost.url }}">
-            <div class="reality-item">
-              <div class="reality-link">
-                <img
-                  class="reality-link__image"
-                  src="{{nemovitost.data.image}}"
-                  alt=""
-                />
-                <div class="reality-link__desc">
-                  <p>{{ nemovitost.data.status }}</p>
-                </div>
-              </div>
-                <h3>{{ nemovitost.data.headline }}</h3>
-            </div>
-          </a>
+      <div class="reality-all">
+        <div class="reality-all__photo">
+          <img
+            class="reality-all__image"
+            src="{{nemovitost.data.image}}"
+            alt=""
+          />
+          <div class="reality-all__price">
+            <p>{{ nemovitost.data.price }}</p>
+          </div>
+          <div class="reality-all__desc">
+            <p>{{ nemovitost.data.status }}</p>
+          </div>
+        </div>
+        <h3>{{ nemovitost.data.headline }}</h3>
+      </div>
+    </a>
 
 {% endfor %}
     </div>

@@ -10,6 +10,7 @@
 
     &__image {
         max-width: 450px;
+        margin: 0 auto;
         
 
         img {
@@ -83,3 +84,40 @@
         
     }
 }
+
+.realization {
+    display: grid;
+    gap: 20px;
+
+    &__image{
+        overflow: hidden;
+        border-radius: 10px;
+        max-width: 450px;
+        margin: 0 auto;
+        box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+        display: block;
+        
+
+        img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+                display: block;
+                transition: transform 0.4s;
+        }
+    }
+
+    @media screen and (min-width:800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .realization__image a:hover img {
+      transform: scale(1.1);
+    }
+    }

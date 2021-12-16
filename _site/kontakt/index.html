@@ -177,7 +177,11 @@
 <script src="/js/glide.min.js"></script>
 
 <script>
-  new Glide('.glide').mount()
+  new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 2
+}).mount()
 </script>
 
 </body>

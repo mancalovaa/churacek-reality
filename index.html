@@ -80,7 +80,7 @@ title: Churáček reality
         </p>
       </div>
     </a>
-    <a class="benefits__link" href="">
+    <a class="benefits__link">
       <div class="benefits__item benefits__item--nolink">
         <svg
           width="40"
@@ -186,24 +186,24 @@ title: Churáček reality
   </div>
   <h2 class="reality__title">Nemovitosti</h2>
   <div class="reality">
-    {% for produkt in collections.novinky %}
+    {% for nemovitost in collections.novinky %}
 
-    <a class="reality-link" href="{{ produkt.url }}">
-      <div class="reality-item">
-        <div class="reality-link">
+    <a class="reality-link" href="{{ nemovitost.url }}">
+      <div class="reality-all">
+        <div class="reality-all__photo">
           <img
-            class="reality-link__image"
-            src="{{produkt.data.image}}"
+            class="reality-all__image"
+            src="{{nemovitost.data.image}}"
             alt=""
           />
-          <div class="reality-link__price">
-            <p>{{ produkt.data.price }}</p>
+          <div class="reality-all__price">
+            <p>{{ nemovitost.data.price }}</p>
           </div>
-          <div class="reality-link__desc">
-            <p>{{ produkt.data.status }}</p>
+          <div class="reality-all__desc">
+            <p>{{ nemovitost.data.status }}</p>
           </div>
         </div>
-        <h3>{{ produkt.data.headline }}</h3>
+        <h3>{{ nemovitost.data.headline }}</h3>
       </div>
     </a>
 

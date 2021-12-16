@@ -3,7 +3,80 @@
 @use 'footer';
 @use 'hero';
 
-// --------------------------------------------------------------
+// --------------prezentace nemovitosti------------------------------------------------
+.presentation {
+
+    &__part {
+        display: grid;
+    }
+
+    &__image {
+        align-self: end;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+    }
+    span {
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+        display: block;
+        transition: transform 0.4s;
+    }
+
+    &__middle a {
+        color: basics.$c-primary;
+
+    }
+
+
+
+
+    @media screen and (min-width:800px) {
+        &__first,
+        &__last {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: auto;
+            gap: 20px
+        }
+
+        &__links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: auto;
+            gap: 20px
+        }
+
+        &__links .button {
+            justify-self: center;
+        }
+        
+    }
+
+}
+
+iframe {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .presentation__image a:hover img {
+      transform: scale(1.1);
+    }
+    }
+
+hr {
+    margin: 20px 0;
+}
+
+
+//--------------vykup a odluzeni-------------------------------------------
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,3 +95,5 @@
         align-self: center;;
     }
 }
+
+

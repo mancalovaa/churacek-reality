@@ -28,9 +28,6 @@
     margin: auto;
   }
 
-
-
-
   @media screen and (min-width: 900px) {
     // display: grid;
     // grid-template-columns: 1fr 1fr;
@@ -41,21 +38,21 @@
     }
 
     &__card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: auto;
       align-self: start;
     }
 
     .gabca__main {
-        grid-column-start: 2;
-        grid-column-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
     }
 
     .gabca__desc {
-        grid-row-start: 1;
-        grid-column-start: 1;
-        grid-column-end: 2;  
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 2;
     }
   }
 }
@@ -65,7 +62,17 @@ hr {
   margin: 0 20px;
 }
 
+//-------------prace kancelare-------------------
+
 .description {
+  @media screen and (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__text {
+    align-self: center;
+  }
   padding: 10px;
   &__image {
     max-width: 450px;
@@ -73,7 +80,7 @@ hr {
 
     img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 15px;
       box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
     }
   }
@@ -98,18 +105,50 @@ hr {
 
   img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba($color: #999999, $alpha: 0.3);
+    border-radius: 15px;
   }
 
   span {
     font-weight: bold;
   }
-  
+
   @media screen and (max-width: 909px) {
     h2::before,
     h2::after {
       display: none;
     }
   }
+
+  @media screen and (min-width: 800px) {
+    &__part {
+      overflow: auto;
+
+      img {
+        width: 50%;
+        float: left;
+        margin: 20px 20px 20px 0;
+      }
+    }
+    &__part--grid {
+      overflow: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      img {
+        width: 100%;
+        margin: 0;
+        display: block;
+        transition: transform (0.4s);
+      }
+    }
+    &__image {
+      overflow: hidden;
+      border-radius: 15px;
+    }
+  }
+}
+
+.work__image:hover img {
+  transform: scale(1.1);
 }

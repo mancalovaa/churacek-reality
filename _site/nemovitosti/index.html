@@ -91,54 +91,63 @@
     <div class="realty-offer">
         
         <a class="reality-link" href="/nemovitosti/prodej-byt-hyskov/">
-            <div class="reality-item">
-              <div class="reality-link">
-                <img
-                  class="reality-link__image"
-                  src="/images/hyskov/10001-19-99.jpg"
-                  alt=""
-                />
-                <div class="reality-link__desc">
-                  <p>Rezervováno</p>
-                </div>
-              </div>
-                <h3>Prodej bytu 3+kk, Hýskov, ul. U Statku</h3>
-            </div>
-          </a>
+      <div class="reality-all">
+        <div class="reality-all__photo">
+          <img
+            class="reality-all__image"
+            src="/images/hyskov/10001-19-99.jpg"
+            alt=""
+          />
+          <div class="reality-all__price">
+            <p>5.590.000,- Kč</p>
+          </div>
+          <div class="reality-all__desc">
+            <p>Rezervováno</p>
+          </div>
+        </div>
+        <h3>Prodej bytu 3+kk, Hýskov, ul. U Statku</h3>
+      </div>
+    </a>
 
 
-        <a class="reality-link" href="/nemovitosti/prodej-byt-hyskov copy/">
-            <div class="reality-item">
-              <div class="reality-link">
-                <img
-                  class="reality-link__image"
-                  src="/images/hyskov/10001-19-99.jpg"
-                  alt=""
-                />
-                <div class="reality-link__desc">
-                  <p>Rezervováno</p>
-                </div>
-              </div>
-                <h3>Prodej bytu 3+kk, Hýskov, ul. U Statku</h3>
-            </div>
-          </a>
+        <a class="reality-link" href="/nemovitosti/prodej-byt-rd-chuchle/">
+      <div class="reality-all">
+        <div class="reality-all__photo">
+          <img
+            class="reality-all__image"
+            src="/images/chuchle/3.png"
+            alt=""
+          />
+          <div class="reality-all__price">
+            <p>16.990.000,- Kč</p>
+          </div>
+          <div class="reality-all__desc">
+            <p>Prodáno</p>
+          </div>
+        </div>
+        <h3>Prodej RD, Praha 5 - Velká Chuchle</h3>
+      </div>
+    </a>
 
 
         <a class="reality-link" href="/nemovitosti/prodej-byt-jakobiho/">
-            <div class="reality-item">
-              <div class="reality-link">
-                <img
-                  class="reality-link__image"
-                  src="/images/Jakobiho/Screenshot 2021-12-16 093107.jpg"
-                  alt=""
-                />
-                <div class="reality-link__desc">
-                  <p>Prodáno</p>
-                </div>
-              </div>
-                <h3>Prodej bytu 3+1,  75 m2, ul. Jakobiho, Praha 10 - Petrovice</h3>
-            </div>
-          </a>
+      <div class="reality-all">
+        <div class="reality-all__photo">
+          <img
+            class="reality-all__image"
+            src="/images/Jakobiho/Screenshot 2021-12-16 093107.jpg"
+            alt=""
+          />
+          <div class="reality-all__price">
+            <p>5.990.000,- Kč</p>
+          </div>
+          <div class="reality-all__desc">
+            <p>Prodáno</p>
+          </div>
+        </div>
+        <h3>Prodej bytu 3+1,  75 m2, ul. Jakobiho, Praha 10 - Petrovice</h3>
+      </div>
+    </a>
 
 
     </div>
@@ -160,7 +169,11 @@
 <script src="/js/glide.min.js"></script>
 
 <script>
-  new Glide('.glide').mount()
+  new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 2
+}).mount()
 </script>
 
 </body>
