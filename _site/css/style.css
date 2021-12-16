@@ -358,6 +358,7 @@ iframe {
   display: block;
   max-height: 365px;
   text-decoration: none;
+  color: #1B405D;
   align-self: stretch;
 }
 .reality-link .reality-all {
